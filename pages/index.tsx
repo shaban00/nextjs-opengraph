@@ -9,12 +9,10 @@ const Home: NextPage = () => {
             <Header title="Welcome to Pinnacle!" meta_og_title="Pinnacle Opengraph Metadata Testing By Shaban" meta_og_description="Pinnacle Opengraph Metadata Testing By Shaban Using Next.js" meta_og_image="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" meta_og_url="https://pinnacle.tenarch.com/" meta_og_type="website" />
             <main className={styles.main}>
                 <h1 className={styles.title}>
-                    Welcome to <a href="https://nextjs.org">Next.js!</a>
+                    Welcome to <a href="#">Pinnacle Opengraph Metadata Testing</a>
                 </h1>
 
-                <p className={styles.description}>
-                    Get started by editing <code className={styles.code}>pages/index.tsx</code>
-                </p>
+                <p className={styles.description}>Testing Pinnacle Opengraph Metadata By Shaban!! (@shaban00)</p>
 
                 <div className={styles.grid}>
                     <a href="https://nextjs.org/docs" className={styles.card}>
@@ -40,11 +38,8 @@ const Home: NextPage = () => {
             </main>
 
             <footer className={styles.footer}>
-                <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank" rel="noopener noreferrer">
-                    Powered by{" "}
-                    <span className={styles.logo}>
-                        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-                    </span>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    Powered by Tenarch
                 </a>
             </footer>
         </div>
