@@ -17,7 +17,7 @@ const Home: NextPage = () => {
             role: "Senior Software Engineer",
             logo: "https://findlogovector.com/wp-content/uploads/2020/01/arc-document-solutions-logo-vector.png",
         });
-    }, []);
+    }, [data]);
     return (
         <div className={styles.container}>
             <Header title="Welcome to Tenarch" meta_og_title={`Your invite to interview with ${data?.company} on Tenarch.`} meta_og_description={`${data?.company} is using Tenarch to help them build a fast & fair hiring process. This is the first step in the process where we can tell you about the role and learn what you are looking for`} meta_og_image={`${data?.logo}`} meta_og_type="website" />
