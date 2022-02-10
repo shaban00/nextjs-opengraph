@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
     return (
         <div className={styles.container}>
-            <Header title="Welcome to Tenarch" meta_og_title={`Your invite to interview with ${data?.company} on Tenarch.`} meta_og_description={`${data?.company} is using Tenarch to help them build a fast & fair hiring process. This is the first step in the process where we can tell you about the role and learn what you are looking for`} meta_og_image={`${data?.logo}`} meta_og_type="website" />
+            <Header title="Welcome to Tenarch" meta_og_title={`Your invite to interview with ${data?.company} on Tenarch.`} meta_og_description={`${data?.company} is using Tenarch to help them build a fast & fair hiring process. This is the first step in the process where we can tell you about the role and learn what you are looking for.`} meta_og_image={`${data?.logo}`} meta_og_type="website" />
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     Welcome to <a href="#">Pinnacle Opengraph Metadata Testing</a>
