@@ -1,12 +1,26 @@
+import React, { useEffect, useState } from "react";
 import type { NextPage } from "next";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 
+type OrganizationData = {
+    company: string;
+    role?: string;
+    logo: string;
+};
+
 const Home: NextPage = () => {
+    const [data, setData] = useState<OrganizationData>();
+    useEffect(() => {
+        setData({
+            company: "Arc Exclusive LLC",
+            role: "Senior Software Engineer",
+            logo: "https://findlogovector.com/wp-content/uploads/2020/01/arc-document-solutions-logo-vector.png",
+        });
+    }, []);
     return (
         <div className={styles.container}>
-            <Header title="Welcome to Pinnacle!" meta_og_title="Pinnacle Opengraph Metadata Testing By Shaban" meta_og_description="Pinnacle Opengraph Metadata Testing By Shaban Using Next.js" meta_og_image="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" meta_og_url="https://pinnacle.tenarch.com/" meta_og_type="website" />
+            <Header title="Welcome to Tenarch" meta_og_title={`Your invite to interview with ${data?.company} on Tenarch.`} meta_og_description={`${data?.company} is using Tenarch to help them build a fast & fair hiring process. This is the first step in the process where we can tell you about the role and learn what you are looking for`} meta_og_image={`${data?.logo}`} meta_og_type="website" />
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     Welcome to <a href="#">Pinnacle Opengraph Metadata Testing</a>
